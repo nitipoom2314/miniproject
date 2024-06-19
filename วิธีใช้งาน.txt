@@ -1,0 +1,12 @@
+-วิธีปรับการใช้งานของโค้ด
+แก้ไข LINE_NOTIFY_TOKENS = [
+    'RNkb8ch08Hl6L6Z5DzfvTepq6RPiN18XKW4Z9ZGfVH6',] *ใส่ token ที่ได้มาจากไลน์ notify ลงไปได้เลยตามตัวอย่าง
+
+แก้ไข path ของโฟลเดอร์ที่ใช้บันทึกภาพ
+folder_to_watch = 'C:/Users/NitipoomSa/Desktop/ฝากรูป'  *ใช้เป็น path ที่ต้องการได้เลย
+บันทึกโค้ดที่แก้ให้เรียบร้อย
+
+-จากนั้นเปิด Command Prompt แล้วรันคำสั่งข้างล่าง
+python C:\Users\NitipoomSa\Desktop\notify\notify.py เปลี่ยน path เปลี่ยนที่อยู่ของโฟลเดอร์ไฟล์นี้เป็นที่อยู่ของไฟล์ในเครื่องตัวเองก่อนรัน และนามสกุลต้อง .py
+
+-ถ้าจะปิดโปรแกรมนี้ ให้กด ctrl + c จะเป็นการปิดโปรแกรม
