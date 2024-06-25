@@ -64,15 +64,16 @@ class FileEventHandler(FileSystemEventHandler):
 def get_folder_to_watch():
     today_date = datetime.now().strftime('%Y-%m-%d')
     network_share_base_path = '\\\\10.20.9.33\\ptm\\AIAA\\10.20.121.4'
+    # folder_to_watch = f'C:\\Users\\NitipoomSa\\Desktop\\{today_date}'
     folder_to_watch = f'{network_share_base_path}\\{today_date}'
 
     # เชื่อมต่อกับเครือข่ายโดยใช้ชื่อผู้ใช้และรหัสผ่าน
     # connect_to_network_path(network_share_base_path, 'administrator', 'L@c!iT')
 
     # ตรวจสอบว่ามีโฟลเดอร์หรือไม่ ถ้าไม่มีให้สร้างใหม่
-    # if not os.path.exists(folder_to_watch):
-    #     os.makedirs(folder_to_watch)
-    #     print(f"Created directory: {folder_to_watch}")
+    if not os.path.exists(folder_to_watch):
+        os.makedirs(folder_to_watch)
+        print(f"Created directory: {folder_to_watch}")
     return folder_to_watch
 
 # สร้าง observer และ event handler
